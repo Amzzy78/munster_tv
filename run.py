@@ -20,16 +20,13 @@ balance = SHEET.worksheet('balance')
 
 data = balance.get_all_values()
 
-#print(data)
+# Inventory sheet
+inventory = SHEET.worksheet('inventory')
+inv_file = inventory.get_all_values()
 
-# Update Inventory sheet
-inv_file = openpyxl.load_workbook('munster-tv')
-# Variable to work on inventory sheet
-product_list = inv_file['inventory'] 
+print(inv_file)
 
-# Calculate how many products per supplier
-product_per_supplier = {} # Dict
-# Loop through the rows
-for product_row in  int(product_list.max_row)
 
-print(product_list.max_row)
+print(data)
+
+
